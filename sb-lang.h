@@ -1,50 +1,52 @@
 #ifndef SB_LANG_H
 #define SB_LANG_H
 
+/* Here goes variables */
+
 // Whitespace characters
-const char space = ' ';
-const char tab_space = '\t';
-const char new_line = '\n';
+const char* space = " ";
+const char* tab_space = "\t";
+const char* new_line = "\n";
 
 // Symbols
-const char single_quote = '\'';
-const char double_quote = '"';
-const char asterisk = '*';
-const char ampersand = '&';
-const char percent_sign = '%';
-const char tilde = '~';
-const char question_mark = '?';
-const char exclamation_mark = '!';
-const char hash_sign = '#';
-const char at_sign = '@';
-const char comma = ',';
-const char colon = ':';
-const char semicolon = ';';
-const char period = '.';
-const char left_parenthesis = '(';
-const char right_parenthesis = ')';
-const char left_bracket = '[';
-const char right_bracket = ']';
-const char left_brace = '{';
-const char right_brace = '}';
-const char plus = '+';
-const char minus = '-';
-const char slash = '/';
-const char backslash = '\\';
-const char equals = '=';
-const char angle_bracket_left = '<';
-const char angle_bracket_right = '>';
-const char pipe = '|';
+const char* single_quote = "'";
+const char* double_quote = "\"";
+const char* asterisk = "*";
+const char* ampersand = "&";
+const char* percent_sign = "%";
+const char* tilde = "~";
+const char* question_mark = "?";
+const char* exclamation_mark = "!";
+const char* hash_sign = "#";
+const char* at_sign = "@";
+const char* comma = ",";
+const char* colon = ":";
+const char* semicolon = ";";
+const char* period = ".";
+const char* left_parenthesis = "(";
+const char* right_parenthesis = ")";
+const char* left_bracket = "[";
+const char* right_bracket = "]";
+const char* left_brace = "{";
+const char* right_brace = "}";
+const char* plus = "+";
+const char* minus = "-";
+const char* slash = "/";
+const char* backslash = "\\";
+const char* equals = "=";
+const char* angle_bracket_left = "<";
+const char* angle_bracket_right = ">";
+const char* pipe = "|";
 
 // Arithmetic operators
-const char add_operator = plus;
-const char subtract_operator = minus;
-const char multiply_operator = asterisk;
-const char divide_operator = slash;
-const char modulo_operator = percent_sign;
+const char* add_operator = "+";
+const char* subtract_operator = "-";
+const char* multiply_operator = "*";
+const char* divide_operator = "/";
+const char* modulo_operator = "%";
 
 // Assignment operators
-const char assign_operator = equals;
+const char* assign_operator = "=";
 const char* increment_operator = "++";
 const char* decrement_operator = "--";
 
@@ -65,17 +67,23 @@ const char* or_operator = "||";
 const char pointer_operator = asterisk;
 const char address_operator = ampersand;
 
-// Data definitions
+// Qualifier keywords
+const char* permanent_keyword = "permanent"; // similar to const, first assigned value stays the same
+const char* live_keyword = "live"; // The process or flow will be interpreted. Can send and listen to one or more processes.
+
+// Type definitions
 const char* int_type = "int";
 const char* float_type = "float";
 const char* char_type = "char";
 const char* string_type = "string";
 const char* bool_type = "bool";
-const char* struct_keyword = "struct";
-const char* flex_type = "flex"; // any of the above types
+const char* anyvar_type = "anyvar"; // any of the above types
+const char* container_type = "container"; // container of variables, flows, processes and be instanced
 
-// Type qualifier keywords
-const char* const_keyword = "const";
+// Data manipulation keywords
+const char* alias_keyword = "alias"; // give an alternative name to a data type
+const char* rename_keyword = "rename"; // convert one data type to another, dispose of the old one
+const char* alternative_keyword = "alternative"; // convert one data type to another, keep the old one
 
 // Boolean literals
 const char* false_keyword = "false";
@@ -100,7 +108,11 @@ const char* from_keyword = "from"; // source of data for move or copy
 const char* to_keyword = "to"; // destination of data for move or copy
 const char* at_keyword = "at"; // reference to a location in memory, like a pointer or address
 
-/* Semantics */
+// Permission and access control keywords
+const char* forbid_keyword = "forbid"; // forbid a operator, keyword, data type, value, flow or process
+
+/* Here goes functions */
+
 
 
 #endif // SB_LANG_H
