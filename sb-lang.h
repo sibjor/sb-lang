@@ -1,12 +1,12 @@
 #ifndef SB_LANG_H
 #define SB_LANG_H
 
-/* Whitespaces */
+// Whitespace characters
 const char space = ' ';
 const char tab_space = '\t';
 const char new_line = '\n';
 
-/* Symbols */
+// Symbols
 const char single_quote = '\'';
 const char double_quote = '"';
 const char asterisk = '*';
@@ -35,8 +35,6 @@ const char equals = '=';
 const char angle_bracket_left = '<';
 const char angle_bracket_right = '>';
 const char pipe = '|';
-
-/* Operators */
 
 // Arithmetic operators
 const char add_operator = plus;
@@ -67,9 +65,7 @@ const char* or_operator = "||";
 const char pointer_operator = asterisk;
 const char address_operator = ampersand;
 
-/* Keywords */
-
-// Type definitions
+// Data definitions
 const char* int_type = "int";
 const char* float_type = "float";
 const char* char_type = "char";
@@ -77,7 +73,6 @@ const char* string_type = "string";
 const char* bool_type = "bool";
 const char* struct_keyword = "struct";
 const char* flex_type = "flex"; // any of the above types
-const char* none_type = "none"; // no value or type, NULL or void
 
 // Type qualifier keywords
 const char* const_keyword = "const";
@@ -105,6 +100,7 @@ const char* from_keyword = "from"; // source of data for move or copy
 const char* to_keyword = "to"; // destination of data for move or copy
 const char* at_keyword = "at"; // reference to a location in memory, like a pointer or address
 
+/* Semantics */
 
 
 #endif // SB_LANG_H
