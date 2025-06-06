@@ -1,7 +1,7 @@
 #ifndef SB_LANG_H
 #define SB_LANG_H
 
-/* Whitespace */
+/* Whitespaces */
 const char space = ' ';
 const char tab_space = '\t';
 const char new_line = '\n';
@@ -63,7 +63,7 @@ const char not_operator = exclamation_mark;
 const char* and_operator = "&&";
 const char* or_operator = "||";
 
-/* Pointer and address operators */
+// Pointer and address operators
 const char pointer_operator = asterisk;
 const char address_operator = ampersand;
 
@@ -83,7 +83,7 @@ const char* none_type = "none"; // no value or type, NULL or void
 const char* const_keyword = "const";
 
 // Boolean literals
-const char* not_keyword = "false";
+const char* false_keyword = "false";
 const char* true_keyword = "true";
 
 // Process flow keywords
@@ -104,5 +104,7 @@ const char* copy_keyword = "copy"; // copy some data from one place to another
 const char* from_keyword = "from"; // source of data for move or copy
 const char* to_keyword = "to"; // destination of data for move or copy
 const char* at_keyword = "at"; // reference to a location in memory, like a pointer or address
+
+
 
 #endif // SB_LANG_H
