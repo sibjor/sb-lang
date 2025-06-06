@@ -43,7 +43,7 @@ const char* add_operator = "+";
 const char* subtract_operator = "-";
 const char* multiply_operator = "*";
 const char* divide_operator = "/";
-const char* modulo_operator = "%";
+const char* modulo_operator = &percent_sign;
 
 // Assignment operators
 const char* assign_operator = "=";
@@ -51,21 +51,21 @@ const char* increment_operator = "++";
 const char* decrement_operator = "--";
 
 // Comparison operators
-const char less_than_operator = angle_bracket_left;
-const char greater_than_operator = angle_bracket_right;
+const char* less_than_operator = &angle_bracket_left;
+const char* greater_than_operator = &angle_bracket_right;
 const char* less_than_equal_operator = "<=";
 const char* greater_than_equal_operator = ">=";
 const char* equal_operator = "==";
 const char* not_equal_operator = "!=";
 
 // Logical operators
-const char not_operator = exclamation_mark;
+const char* not_operator = "!";
 const char* and_operator = "&&";
 const char* or_operator = "||";
 
 // Pointer and address operators
-const char pointer_operator = asterisk;
-const char address_operator = ampersand;
+const char* pointer_operator = &asterisk;
+const char* address_operator = &ampersand;
 
 // Qualifier keywords
 const char* permanent_keyword = "permanent"; // similar to const, first assigned value stays the same
