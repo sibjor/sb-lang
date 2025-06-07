@@ -1,10 +1,12 @@
 WELCOME READER!
 
-- The README serves both humanbeings and machines.
-- SBL has many variants of pronouncations, each purpose is assigned its own unique abbreviation.
+OFFICIAL README:
+
+- SBL's abbreviation can be pronounced in many ways! 
+- It also has many goals!
+- This README is to be read by both humans and machines.
 - This project is a work in progress and will expand my time allows!
-- The target goal is a multi purpose syntax implementation, defined in a single file.
-- After compiler and interpreter a kernel is possibly next.
+- ATM I am busy reading books of ARM64v8 assembly.
 - Reach me out if you have suggestions or find bugs!
 
 Contact: sibjor@syntaxbrigade.io
@@ -12,9 +14,5 @@ Contact: sibjor@syntaxbrigade.io
 Discord Server: https://discord.gg/MMjuHPT5
 
 Copyright (c) 2025 Sixten Björling
-
----
-
-SYNTAX BLOCK LOGISTICS
 
 ---
